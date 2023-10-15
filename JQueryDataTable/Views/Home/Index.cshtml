@@ -2,7 +2,36 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1 class="text-center display-3"> JQuery Data Table Tool </h1>
+
+<a type="button" asp-controller="Home" asp-action="Create" class="btn btn-success btn-lg btn-block w-100 mt-5 mb-5">Add new user</a>
+
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Phone</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>mdo</td>
+            <td>
+                <button class="btn btn-danger text-light">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+                
+                <button class="btn btn-danger text-light ml-2">
+                    <i class="fa-solid fa-trash-can"></i>
+                </button>
+
+            </td>
+        </tr>       
+    </tbody>
+</table>
