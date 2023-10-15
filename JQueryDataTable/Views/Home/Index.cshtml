@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<People>
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -6,9 +7,9 @@
 
 <a type="button" asp-controller="Home" asp-action="Create" class="btn btn-success btn-lg btn-block w-100 mt-5 mb-5">Add new user</a>
 
-<table class="table">
+<table id="people-table" class="table">
     <thead class="thead-dark">
-        <tr>
+        <tr class="text-center">
             <th scope="col">#</th>
             <th scope="col">Name</th>
             <th scope="col">E-mail</th>
@@ -17,21 +18,28 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>mdo</td>
-            <td>
-                <button class="btn btn-danger text-light">
-                    <i class="fa-solid fa-trash"></i>
-                </button>
-                
-                <button class="btn btn-danger text-light ml-2">
-                    <i class="fa-solid fa-trash-can"></i>
-                </button>
+        @{
+            foreach(var people in Model)
+            {
+                <tr>
+                    <td align="center">@people.Id</td>
+                    <td align="center">@people.Name</td>
+                    <td align="center">@people.Email</td>
+                    <td align="center">@people.Phone</td>
+                    <td align="center">
+                        <button onclick="return editPeople(@people.Id)" class="btn btn-primary text-light">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Edit
+                        </button>
 
-            </td>
-        </tr>       
+                        <button onclick="return deletePeople(@people.Id)" class="btn btn-danger text-light ml-2">
+                            <i class="fa-solid fa-trash-can"></i>
+                            Delete
+                        </button>
+
+                    </td>
+                </tr>
+            }
+        }      
     </tbody>
 </table>

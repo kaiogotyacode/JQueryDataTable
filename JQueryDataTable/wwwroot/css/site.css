@@ -20,3 +20,12 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+
+.paginate_button {
+    transition: 0.5s;
+}
+
+.replacing-button:hover{
+    background-color: #258cfb !important;
+}
