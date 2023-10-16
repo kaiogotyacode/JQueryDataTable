@@ -40,5 +40,18 @@ namespace JQueryDataTable.Controllers
         {
             return View();
         }
+
+        [HttpDelete]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var user = _databaseContext.Peoples.FirstOrDefault(x => x.Id == id);
+            
+            if(user != null)
+                _databaseContext.Peoples.Remove(user);
+
+            await _databaseContext.SaveChangesAsync();
+
+            return RedirectToAction("Index");
+        }
     }
 }
