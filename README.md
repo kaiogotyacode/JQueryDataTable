@@ -23,31 +23,31 @@ Access: https://www.youtube.com/watch?v=JkVAhm4XHyQ
 
 $(document).ready(() => {
 
-    $('#people-table').DataTable({
+    $('#TableID').DataTable({
         "ordering": false,
         "paging": true,
         "searching": false,
-        "olanguage": {
-            "semptytable": "nenhum registro encontrado na tabela",
-            "sinfo": "mostrar _start_ até _end_ de _total_ registros",
-            "sinfoempty": "mostrar 0 até 0 de 0 registros",
-            "sinfofiltered": "(filtrar de _max_ total registros)",
-            "sinfopostfix": "",
-            "sinfothousands": ".",
-            "slengthmenu": "mostrar _menu_ registros por pagina",
-            "sloadingrecords": "carregando...",
-            "sprocessing": "processando...",
-            "szerorecords": "nenhum registro encontrado",
-            "ssearch": "pesquisar",
-            "opaginate": {
-                "snext": "proximo",
-                "sprevious": "anterior",
-                "sfirst": "primeiro",
-                "slast": "ultimo"
+        "oLanguage": {
+            "sEmptytable": "nenhum registro encontrado na tabela",
+            "sInfo": "mostrar _start_ até _end_ de _total_ registros",
+            "sInfoEmpty": "mostrar 0 até 0 de 0 registros",
+            "sInfoFiltered": "(filtrar de _max_ total registros)",
+            "sInfoPostFix": "",
+            "sInfoThousands": ".",
+            "sLengthMenu": "mostrar _menu_ registros por pagina",
+            "sLoadingRecords": "carregando...",
+            "sProcessing": "processando...",
+            "sZeroRecords": "nenhum registro encontrado",
+            "sSearch": "pesquisar",
+            "oPaginate": {
+                "sNext": "proximo",
+                "sPrevious": "anterior",
+                "sFirst": "primeiro",
+                "sLast": "ultimo"
             },
-            "oaria": {
-                "ssortascending": ": ordenar colunas de forma ascendente",
-                "ssortdescending": ": ordenar colunas de forma descendente"
+            "oAria": {
+                "sSortAscending": ": ordenar colunas de forma ascendente",
+                "sSortDescending": ": ordenar colunas de forma descendente"
             }
         }
     });    
