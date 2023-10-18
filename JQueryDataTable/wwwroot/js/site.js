@@ -33,6 +33,9 @@ function deletePeople(id) {
 
 
 
+//Entrar com SCSS, dizendo: quando innerWidth <= 991 > Adicionar small table
+
+
 
 
 

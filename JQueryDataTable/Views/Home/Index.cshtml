@@ -7,7 +7,7 @@
 
 <a type="button" asp-controller="Home" asp-action="Create" class="btn btn-success btn-lg btn-block w-100 mt-5 mb-5">Add new user</a>
 
-<table id="people-table" class="table">
+<table id="people-table" class="table table-light small">
     <thead class="thead-dark">
         <tr class="text-center">
             <th scope="col">#</th>
@@ -29,12 +29,10 @@
                     <td align="center">
                         <button onclick="return editPeople(@people.Id)" class="btn btn-primary text-light">
                             <i class="fa-solid fa-pen-to-square"></i>
-                            Edit
                         </button>
 
                         <button onclick="return deletePeople(@people.Id)" class="btn btn-danger text-light ml-2">
                             <i class="fa-solid fa-trash-can"></i>
-                            Delete
                         </button>
 
                     </td>
