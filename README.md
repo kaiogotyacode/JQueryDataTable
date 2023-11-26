@@ -1,9 +1,13 @@
 # JQueryDataTable 🤩
 Using tool for reports pagination, easy &amp; simple!
 
-## ✨ YouTube Video 
+## ✨ Check out the 👉 [YouTube Video](https://www.youtube.com/watch?v=JkVAhm4XHyQ)
 
-Access: https://www.youtube.com/watch?v=JkVAhm4XHyQ
+
+<div align="center">
+  <img width="500rem" src="https://i.ytimg.com/an_webp/JkVAhm4XHyQ/mqdefault_6s.webp?du=3000&sqp=CNDKjqsG&rs=AOn4CLDUdoSOQ-a_NolrI0HNXHnIWF811Q">  
+</div>
+
 
 <div align="center">
   <img height="400em" src="https://portfolio-kaiogotya.s3.us-east-2.amazonaws.com/JQueryDataTable.png">
