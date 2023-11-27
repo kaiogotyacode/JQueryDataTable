@@ -5,7 +5,7 @@ Using tool for reports pagination, easy &amp; simple!
 
 
 <div align="center">
-  <img width="500rem" src="https://i.ytimg.com/an_webp/JkVAhm4XHyQ/mqdefault_6s.webp?du=3000&sqp=CNDKjqsG&rs=AOn4CLDUdoSOQ-a_NolrI0HNXHnIWF811Q">  
+  <img width="500rem" src="https://github.com/kaiogotyacode/JQueryDataTable/assets/43120150/02755190-1767-42df-81dd-3aa0660f80c9)">  
 </div>
 
 
